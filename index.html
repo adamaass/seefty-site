@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SEEFTY LTD – Mobile app development studio based in London, UK. We craft world‑class iOS & Android apps that delight users and scale businesses." />
+  <title>SEEFTY – Mobile App Development Studio</title>
+  <style>
+    :root {
+      --primary: #0061ff;
+      --secondary: #0a0a0a;
+      --light: #f9f9f9;
+      --grey: #777;
+    }
+    * {box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;}
+    body {background:var(--light);color:var(--secondary);line-height:1.6;}
+    header {background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05);position:sticky;top:0;z-index:99;}
+    .container {width:90%;max-width:1140px;margin:0 auto;padding:2rem 0;}
+    nav {display:flex;align-items:center;justify-content:space-between;}
+    nav ul {display:flex;gap:2rem;list-style:none;}
+    nav a {text-decoration:none;color:var(--secondary);font-weight:500;}
+    nav a:hover {color:var(--primary);} 
+    .hero {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center;gap:3rem;padding:6rem 0;}
+    .hero img {width:100%;border-radius:1rem;box-shadow:0 10px 25px rgba(0,0,0,.1);} 
+    h1 {font-size:clamp(2.5rem,5vw,3rem);margin-bottom:1rem;}
+    h2 {font-size:2rem;margin-bottom:1rem;}
+    p.lead {font-size:1.25rem;margin-bottom:2rem;}
+    .btn {background:var(--primary);color:#fff;padding:.75rem 1.5rem;border:none;border-radius:.5rem;font-size:1rem;text-decoration:none;display:inline-block;cursor:pointer;transition:.25s;} 
+    .btn:hover {background:#004bcb;}
+    section {padding:4rem 0;}
+    .services, .why {display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;}
+    .card {background:#fff;border-radius:1rem;padding:2rem;box-shadow:0 5px 15px rgba(0,0,0,.05);}
+    .card h3 {margin-bottom:.75rem;}
+    .portfolio img {width:100%;border-radius:1rem;box-shadow:0 5px 15px rgba(0,0,0,.08);} 
+    .contact-form {display:flex;flex-direction:column;gap:1rem;margin-top:2rem;}
+    .contact-form input, .contact-form textarea {padding:.75rem;border:1px solid #ccc;border-radius:.5rem;font-size:1rem;}
+    .contact-form button {align-self:flex-start;}
+    footer {background:#fff;padding:2rem 0;border-top:1px solid #eaeaea;}
+    footer .info {font-size:.9rem;color:var(--grey);}
+    footer a {color:var(--secondary);} 
+    @media (prefers-color-scheme: dark) {
+      body {background:#1a1a1a;color:#f2f2f2;}
+      header, footer, .card {background:#222;}
+      nav a {color:#f2f2f2;}
+      nav a:hover {color:var(--primary);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" style="font-weight:700;font-size:1.25rem;">SEEFTY LTD</a>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div>
+        <h1>Building mobile experiences <br />that people <span style="color:var(--primary);">love</span>.</h1>
+        <p class="lead">SEEFTY is a London‑based studio crafting beautiful, scalable iOS & Android apps. From concept to App Store, we handle it all.</p>
+        <a href="#contact" class="btn">Start Your Project</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Mobile app wireframes on desk" />
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="container">
+      <h2>What We Do</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Custom App Development</h3>
+          <p>Bespoke native & cross‑platform apps built with Swift, Kotlin, React Native & Flutter.</p>
+        </div>
+        <div class="card">
+          <h3>UI / UX Design</h3>
+          <p>User‑centric design that delights and converts, following Apple’s Human Interface Guidelines.</p>
+        </div>
+        <div class="card">
+          <h3>App Store Compliance</h3>
+          <p>We ensure your app passes Apple & Google review on the first try – privacy, security & performance.</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance & Growth</h3>
+          <p>Post‑launch support, analytics, ASO & feature road‑mapping to keep users engaged.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="container">
+      <h2>Recent Work</h2>
+      <div class="portfolio" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;">
+        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80" alt="Social networking app interface" />
+        <img src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?auto=format&fit=crop&w=800&q=80" alt="Health tracking dashboard" />
+        <img src="https://images.unsplash.com/photo-1523475496153-3d6cc53b7d79?auto=format&fit=crop&w=800&q=80" alt="E‑commerce mobile checkout" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container">
+      <h2>About SEEFTY</h2>
+      <p>SEEFTY LTD (Company No. 15334254) is a mobile software studio headquartered in London. Our multidisciplinary team brings together product strategists, designers, and senior engineers who have shipped top‑ranked apps across finance, health, education, and entertainment.</p>
+      <p>We believe in lean, data‑driven development and long‑term partnerships with our clients. Your vision, our code.</p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container">
+      <h2>Why Choose Us</h2>
+      <div class="why">
+        <div class="card"><h3>Agile & Transparent</h3><p>Weekly sprints, shared repos, and crystal‑clear reporting keep you in the loop.</p></div>
+        <div class="card"><h3>Security First</h3><p>GDPR‑compliant architecture, secure code reviews, and encrypted data flows.</p></div>
+        <div class="card"><h3>UK‑Based Team</h3><p>All project management & IP stay onshore. Global talent, local accountability.</p></div>
+        <div class="card"><h3>Proven Track Record</h3><p>Millions of downloads, 5‑star ratings, and apps featured by Apple.</p></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+      <h2>Let’s Build Something Great</h2>
+      <p>Tell us about your idea and we’ll get back within 24 hours.</p>
+      <form class="contact-form" action="mailto:info@seefty.com" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your name" required />
+        <input type="email" name="Email" placeholder="Your email" required />
+        <textarea name="Message" rows="5" placeholder="Project details…" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p style="margin-top:2rem;">Prefer email? <a href="mailto:hello@seefty.com">hello@seefty.com</a>  |  Phone: +44 20 7946 0999</p>
+    </section>
+
+    <!-- Privacy Policy Anchor -->
+    <section id="privacy" class="container" style="font-size:.9rem;color:var(--grey);">
+      <h2>Privacy Policy</h2>
+      <p>We respect your privacy. Any data submitted through this website will be used solely to respond to your inquiry and will not be shared with third parties. For full details, please email <a href="mailto:privacy@seefty.com">privacy@seefty.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="info">© 2025 SEEFTY LTD · Company No. 15334254 · Registered office: 7 Coronation Road, Dephna House, Launchese #105, London, NW10 7PQ, United Kingdom.</p>
+      <p class="info"><a href="#privacy">Privacy Policy</a>  |  <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+</body>
+</html>
